@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhar Processadores</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <!-- ABA DO DETALHAMENTO DOS PROCESSADORES -->
+    <div class="container px-2 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">PROCESSADORES INTEL</h2>
+        <center>
+          <div class="row g-4 py-5 row-cols-1">
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="{{periferico.foto}}" alt="" width="256" height="256">
+              </div>
+              <h3 class="fs-2">{{periferico.nome}}</h3>
+              <p>{{periferico.descricao}}</p>
+              <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+          </div>
+        </center>
+        
+    </div>
+    <!-- FIM DO DETALHAMENTO DOS PROCESSADORES-->
+    
+    <!-- COMEÇO DO FOOTER -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2023 Recanto da Informática</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://www.instagram.com/lucasfidelis07/" class="nav-link px-2 text-muted">Instagram</a></li>
+        <li class="nav-item"><a href="https://www.youtube.com/channel/UCoMIlS_GFCcAhqlPVWHkVbg" class="nav-link px-2 text-muted">YouTube</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Discord</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- FIM DO FOOTER -->
+</body>
+</html>

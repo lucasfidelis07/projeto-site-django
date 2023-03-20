@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placas de Vídeo</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+</head>
+<body>
+  <!-- HEADER DO SITE -->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="http://127.0.0.1:8000/principal/" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="https://www.youtube.com" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- FIM DO HEADER DO SITE-->
+
+  <!-- COMEÇO DO MAIN -->
+  <main>
+    <!-- BARRA PARA DETALHAR OS PERIFÉRICOS -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="http://localhost:8000/processadores/" class="nav-link" aria-current="page">Processadores</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/memorias/" class="nav-link">Memórias RAM</a></li>
+          <li class="nav-item"><a href="http://127.0.0.1:8000/principal/" class="nav-link active">Placas de Vídeo</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_mae/" class="nav-link">Placas-mãe</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- FIM DA BARRA -->
+
+    <!--COMEÇO DO TÍTULO E DESCRIÇÃO -->
+    <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">PLACAS DE VÍDEO</h1>
+      <p class="fs-5 text-muted">Pra dar aquele upgrade na performance, além do processador e memória RAM, a placa de vídeo é aquela que dará total performance para seu jogo/programa</p>
+    </div>
+    <!-- FIM DO TÍTULO E DESCRIÇÃO -->
+
+    <!-- COMEÇO DA ABA DAS GPUs NVIDIA -->
+    <h1 class="visually-hidden">Features examples</h1>
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">NVIDIA</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="https://images.kabum.com.br/produtos/fotos/95459/95459_1520954069_index_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">NVIDIA GTX 1050 Ti OC, 4GB GDDR5</h3>
+        <p>A GTX 1050 Ti OC Cerberus é euqipada com o Microsoft DirectX 12 (DX12), você consegue ter um  desempenho incrivelmente rápido, mais frames por segundo e latência reduzida em todas as placas de vídeo AMD Radeon. </p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+    </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/164854/placa-de-video-asus-nvidia-dual-rtx-3060-o12g-v2-15-gbps-12gb-gddr6-ray-tracing-dlss-90yv0gb2-m0na10_1623244899_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">NVIDIA RTX 3060, 12GB GDDR6, RAY TRACING</h3>
+        <p>A NVIDIA GeForce DUAL RTX 3060 O12G V2 é equipada com uma memória de 12GB GDDR6, Velocidade de Memória de 15 Gbps, e Boost Clock de 1867 MHz em OC e de 1867 MHz no modo Jogo.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/391124/placa-de-video-msi-nvidia-geforce-rtx-2060-ventus-12-gb-gddr6-ray-tracing-rtx-2060-ventus-12g-oc_1667570594_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">NVIDIA RTX 2060, 12GB GDDR6, RAY TRACING</h3>
+        <p>Essa arquitetura revolucionária, combinada com nossa nova plataforma GeForce RTX, combina ray tracing em tempo real, inteligência artificial e sombreamento programável. Você nunca criou e desfrutou de jogos como este antes.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+  <!--FIM DA ABA DAS GPUs NVIDIA-->
+
+  <!--COMEÇO DA ABA DAS GPUs AMD-->
+  <h1 class="visually-hidden">Features examples</h1>
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">AMD</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="https://images.kabum.com.br/produtos/fotos/382632/placa-de-video-powercolor-red-dragon-amd-radeon-rx-580-8gb-gddr5-axrx-580-8gbd5-dhd_1666194882_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RX 580, 8GB GDDR5</h3>
+        <p>A tecnologia AMD FreeSync põe fim à jogabilidade instável e quadros quebrados com desempenho fluido e livre de artefatos em praticamente qualquer taxa de quadros. </p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+    </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/387409/placa-de-video-gigabyte-amd-radeon-rx-6700-xt-eagle-12gb-gddr6-rgb-ray-tracing-gv-r67xteagle-12gd_1666194470_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RADEON RX 6700 XT, 12GB GDDR6, RAY TRACING, RGB</h3>
+        <p>O sistema de resfriamento WINDFORCE 3X possui ventiladores de lâmina exclusivos de 3x80mm, rotação alternada, 3 tubos de calor de cobre composto GPU de toque direto, ventilador ativo 3D e resfriamento de tela, que juntos fornecem dissipação de calor de alta eficiência.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/136468/placa-de-video-asrock-amd-radeon-rx-6900-xt-graphics-16-gbps-16gb-gddr6-pci-express-4-0-hardware-raytracing-rx6900xt-pgd-16go_1610646721_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RADEON RX 6900 XT, 16GB GDDR6, RAY TRACING</h3>
+        <p>A almofada térmica premium ajuda a transferir o calor dos componentes para o dissipador de calor, melhorando a dissipação de calor. A ASRock adota torque de parafuso preciso ao montar suas placas gráficas para otimizar a pressão de montagem do resfriador para melhorar a eficiência térmica, evitando danos ao chip da GPU.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+  <!--FIM DA ABA DAS GPUs AMD-->
+  </main>
+
+  <!-- COMEÇO DO FOOTER -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2023 Recanto da Informática</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://www.instagram.com/lucasfidelis07/" class="nav-link px-2 text-muted">Instagram</a></li>
+        <li class="nav-item"><a href="https://www.youtube.com/channel/UCoMIlS_GFCcAhqlPVWHkVbg" class="nav-link px-2 text-muted">YouTube</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Discord</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- FIM DO FOOTER -->
+</body>
+</html>

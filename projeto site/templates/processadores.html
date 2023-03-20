@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processadores</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+</head>
+<body>
+  <!-- HEADER DO SITE -->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="http://127.0.0.1:8000/principal/" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="https://www.youtube.com" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- FIM DO HEADER DO SITE-->
+
+  <!-- COMEÇO DO MAIN -->
+  <main>
+    <!-- BARRA PARA DETALHAR OS PERIFÉRICOS -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="http://localhost:8000/processadores/" class="nav-link active" aria-current="page">Processadores</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/memorias/" class="nav-link">Memórias RAM</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_de_video/" class="nav-link">Placas de Vídeo</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_mae/" class="nav-link">Placas-mãe</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- FIM DA BARRA -->
+
+    <!--COMEÇO DO TÍTULO E DESCRIÇÃO -->
+    <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">PROCESSADORES</h1>
+      <p class="fs-5 text-muted">Temos os melhores processadores, sejam eles atuais e/ou mais utilizado pelos gamers.</p>
+    </div>
+    <!-- FIM DO TÍTULO E DESCRIÇÃO -->
+
+    <!-- ABA DOS PROCESSADORES DA INTEL -->
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">PROCESSADORES INTEL</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="https://images.kabum.com.br/produtos/fotos/405768/processador-intel-core-i3-13100f-4-5ghz-max-turbo-cache-12mb-4-nucleos-8-threads-lga-1700-bx8071513100f_1672748380_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">INTEL CORE I3-13100F</h3>
+        <p>Com suporte para DDR4 e DDR5, os processadores para desktop Intel Core i3 de 13ª geração são otimizados para produtividade. É necessário ter gráficos discretos. Compatível com placas-mãe com base em chipset Intel Série 700 e Intel Série 600. Potência de base do processador 58W.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+    </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/112991/processador-intel-core-i5-10400f-cache-12mb-2-9ghz-lga-1200-bx8070110400f_1589199927_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">INTEL CORE I5-10400</h3>
+        <p>Os novos processadores Intel® Core™ da 10ª geração oferecem atualizações de desempenho incríveis para melhorar a produtividade e proporcionar entretenimento surpreendente.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/386971/processador-intel-core-i9-13900k-5-8ghz-max-turbo-cache-36mb-24-nucleos-32-threads-lga-1700-video-integrado-bx8071513900k_1664286209_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">INTEL CORE I9-11900KF</h3>
+        <p>Atuando em uma harmonia sem precedentes, o novo núcleo e arquiteturas gráficas, desempenho inteligente baseado em IA e a melhor conectividade sem fio e com fio da categoria, os processadores Intel® Core™ da 11ª Geração elevam o desempenho de notebooks e desktops a novos patamares.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+  <!--FIM DA ABA DOS PROCESSADORES DA INTEL-->
+
+  <!--COMEÇO DA ABA DOS PROCESSADORES DA AMD-->
+  <h1 class="visually-hidden">Features examples</h1>
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">PROCESSADORES AMD</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="https://images.kabum.com.br/produtos/fotos/102248/processador-amd-ryzen-3-3200g-cache-4mb-3-6ghz-4ghz-max-turbo-am4-yd3200c5fhbox_1607691191_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RYZEN 3 3200G</h3>
+        <p>A arquitetura Zen 2 do núcleo de alto desempenho da AMD permite que os Processadores de 2ª geração Ryzen ofereçam o mais alto desempenho para uma ou múltiplas linhas de execução e de qualquer Processador de desktop convencional.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+    </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/333145/processador-amd-ryzen-5-4600g-cache-11mb-3-7ghz-4-2ghz-max-turbo-am4-video-integrado-100-100000147box_1653338732_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RYZEN 5 4600G</h3>
+        <p>Esteja você jogando, trabalhando ou fazendo as tarefas do cotidiano, a velocidade sem precedentes dos processadores AMD Ryzen série 4000 G para desktop é imparável. Com os processadores AMD Ryzen para desktop, você está sempre na frente.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/320797/processador-amd-ryzen-7-5700x-cache-36mb-3-8ghz-4-6ghz-max-turbo-am4-100-100000926wof_1647636511_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">AMD RYZEN 7 5700X</h3>
+        <p>Quando você tem a arquitetura de processador de desktop mais avançada do mundo para jogadores e criadores de conteúdo, as possibilidades são infinitas. Esteja você jogando os jogos mais recentes, projetando o próximo prédio ou processando dados, você precisa de um processador poderoso que possa lidar com tudo - e muito mais. Sem dúvida, os processadores AMD Ryzen série 5000 definem o padrão para jogadores e artistas.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+  <!--FIM DA ABA DOS PROCESSADORES DA AMD-->
+  </main>
+
+  <!-- COMEÇO DO FOOTER -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2023 Recanto da Informática</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://www.instagram.com/lucasfidelis07/" class="nav-link px-2 text-muted">Instagram</a></li>
+        <li class="nav-item"><a href="https://www.youtube.com/channel/UCoMIlS_GFCcAhqlPVWHkVbg" class="nav-link px-2 text-muted">YouTube</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Discord</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- FIM DO FOOTER -->
+</body>
+</html>

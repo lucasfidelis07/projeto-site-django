@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placas Mãe</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+</head>
+<body>
+  <!-- HEADER DO SITE -->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="http://127.0.0.1:8000/principal/" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="https://www.youtube.com" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- FIM DO HEADER DO SITE-->
+
+  <!-- COMEÇO DO MAIN -->
+  <main>
+    <!-- BARRA PARA DETALHAR OS PERIFÉRICOS -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="http://localhost:8000/processadores/" class="nav-link" aria-current="page">Processadores</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/memorias/" class="nav-link">Memórias RAM</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_de_video/" class="nav-link">Placas de Vídeo</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_mae/" class="nav-link active">Placas-mãe</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- FIM DA BARRA -->
+
+    <!--COMEÇO DO TÍTULO E DESCRIÇÃO -->
+    <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">PLACAS MÃE</h1>
+      <p class="fs-5 text-muted">A placa-mãe é o cérebro do computador. Para que tudo esteja nos conformes, é através dela!</p>
+    </div>
+    <!-- FIM DO TÍTULO E DESCRIÇÃO -->
+
+    <!-- COMEÇO DA ABA DAS GPUs NVIDIA -->
+    <h1 class="visually-hidden">Features examples</h1>
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">MODELOS</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="https://images.kabum.com.br/produtos/fotos/188292/placa-mae-gigabyte-h510m-rev-1-0-intel-lga1200-atx-ddr4-h510m-h_1628104476_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">PLACA MÃE GIGABYTE H510M, INTEL, MATX, DDR4</h3>
+        <p>Com uma nova GUI e funcionalidades mais fáceis de usar, a GIGABYTE foi capaz de reinventar o BIOS para dar aos usuários uma experiência melhor enquanto configuram seu novo sistema. EasyTune com interface simples e fácil de usar. Conectores de alimentação ATX 12V de 8 pinos revestidos de placas sólidas para oferecer uma fonte de alimentação estável durante a sobrecarga da CPU.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+    </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/114781/placa-mae-gigabyte-b550m-aorus-elite-amd-am4-micro-atx-ddr4_1594908595_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">PLACA MÃE B550M AORUS ELITE, AMD AM4, MATX, DDR4</h3>
+        <p>As placas-mãe da série de jogos B550 usam um design de MOSFETs PWM + baixo RDS (on) digital de 5 + 3 fases para oferecer suporte aos processadores AMD Ryzen de 3ª geração, oferecendo incrível precisão no fornecimento de energia aos componentes que mais demandam energia, além de oferecer desempenho aprimorado do sistema.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="https://images.kabum.com.br/produtos/fotos/154189/placa-mae-asrock-a320m-hd-r4-amd-am4-micro-atx-ddr4-90-mxbed0-a0bayz_1623155350_gg.jpg" alt="" width="256" height="256">
+        </div>
+        <h3 class="fs-2">ASROCK A320M-HD R4, AMD AM4, MATX, DDR4</h3>
+        <p>Placa Mãe ASRock A320M-HD R4 Proteja sua máquina de RV Prepare-se bem para desfrutar do impressionante mundo da Realidade Virtual. Antes disso, você deve verificar se tudo está qualificado, incluindo hardware, software e drivers.</p>
+        <button type="button" class="btn btn-outline-success">Comprar Agora</button>
+      </div>
+    </div>
+  </div>
+  <!--FIM DA ABA DAS GPUs NVIDIA-->
+  </main>
+
+  <!-- COMEÇO DO FOOTER -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2023 Recanto da Informática</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://www.instagram.com/lucasfidelis07/" class="nav-link px-2 text-muted">Instagram</a></li>
+        <li class="nav-item"><a href="https://www.youtube.com/channel/UCoMIlS_GFCcAhqlPVWHkVbg" class="nav-link px-2 text-muted">YouTube</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Discord</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- FIM DO FOOTER -->
+</body>
+</html>

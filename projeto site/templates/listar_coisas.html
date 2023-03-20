@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recanto da Informática</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+</head>
+<body>
+  <!-- HEADER DO SITE -->
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="https://www.youtube.com" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- FIM DO HEADER DO SITE-->
+
+  <!-- COMEÇO DO MAIN -->
+  <main>
+    <!-- BARRA PARA DETALHAR OS PERIFÉRICOS -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="http://localhost:8000/processadores/" class="nav-link" aria-current="page">Processadores</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/memorias/" class="nav-link">Memórias RAM</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_de_video/" class="nav-link">Placas de Vídeo</a></li>
+          <li class="nav-item"><a href="http://localhost:8000/placas_mae/" class="nav-link">Placas-mãe</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- FIM DA BARRA -->
+   
+    <!--COMEÇO DO TÍTULO E DESCRIÇÃO -->
+    <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">SEJAM BEM-VINDOS AO RECANTO DA INFORMÁTICA</h1>
+      <p class="fs-5 text-muted">Aqui vocês acharão tudo que seja necessário para sua máquina!</p>
+    </div>
+    <!-- FIM DO TÍTULO E DESCRIÇÃO -->
+
+    <!-- AVALIAÇÃO DOS CLIENTES -->
+    <h1 class="visually-hidden">Features examples</h1>
+  <div class="container px-2 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Avaliações dos Clientes</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+        </div>
+        <h3 class="fs-2">Jackson Sampaio</h3>
+        <p>Comprei minha RTX 3060 no precinho, foi maravilhoso. Muito obrigado!</p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+        </div>
+        <h3 class="fs-2">Lucas Fidelis</h3>
+        <p>Tenho somente a agradecer, tudo ocorrendo nos conformes. Obrigado, pessoal!</p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+        </div>
+        <h3 class="fs-2">Izabelle Sobrinho</h3>
+        <p>Tudo perfeito, tudo em ordem, tudo correto.</p>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2023 Recanto da Informática</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="https://www.instagram.com/lucasfidelis07/" class="nav-link px-2 text-muted">Instagram</a></li>
+        <li class="nav-item"><a href="https://www.youtube.com/channel/UCoMIlS_GFCcAhqlPVWHkVbg" class="nav-link px-2 text-muted">YouTube</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Discord</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
